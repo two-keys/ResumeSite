@@ -36,9 +36,6 @@ function Content(props) {
                             <a href="/projects">Projects</a>
                         </li>
                         <li>
-                            <a href="subpages/Designs.html" target="rightcont">Designwork</a>
-                        </li>
-                        <li>
                             <a href="subpages/Website.html" target="rightcont">Website</a>
                         </li>
                     </ul>
