@@ -1,15 +1,3 @@
-.maincontainer {
-  width: 100%;
-  height: 600px;
-  display: flex;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .card {
   flex-basis: 100%;
   margin-left: 2px;
@@ -41,12 +29,6 @@
 }
 
 .card:hover .header::after {
-  content: "_";
+  content: " _";
   animation: flickerAnimation 1.05s infinite;
-}
-
-#rightframe {
-  width: 100%;
-  height: 100%;
-  border: 0px;
 }
