@@ -1,4 +1,5 @@
 import Card from '@Components/Card/Card';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from './Content.module.css';
 
@@ -29,7 +30,7 @@ function Content(props) {
                     </p>
                     <ul>
                         <li>
-                            <a href="subpages/About.html"  target="rightcont">About</a>
+                            <Link href="/">About</Link>
                         </li>
                         <li>
                             <a href="subpages/Projects.html" target="rightcont">Projects</a>
