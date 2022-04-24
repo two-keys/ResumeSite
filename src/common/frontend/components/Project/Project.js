@@ -1,13 +1,14 @@
+import { useState } from "react";
+
 function Project(props) {
     const { title } = props;
 
+    const [isOpen, setOpen] = useState(false);
+
     return(
         <div>
-            <div style={{"display": "none"}}>
-                &gt; <a>{title}</a>
-            </div>
-            <div style={{"display": "inline"}}>
-                <h2><a>{title}</a></h2>
+            <h2>&gt; <a onClick={() => setOpen(!isOpen)}>{title}</a></h2>
+            <div style={{"display": (isOpen) ? "inline" : "none"}}>
                 {props.children}
             </div>
         </div>
