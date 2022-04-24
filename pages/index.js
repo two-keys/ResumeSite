@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '@Frontend/styles/Home.module.css'
+//import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -11,59 +11,62 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+      <div className={styles.maincontainer}>
+        <div className={styles.container} style={{"float": "left"}}>
+          <div className={styles.card}>
+            <p className={styles.header}>
+              CONNECT antonysanchez.com
             </p>
-          </a>
+            <p>
+              Antony % Portfolio
+            </p>
+            <p>
+              This portfolio website uses the VT323 font-family, which is Licensed under the Open Font License, and is styled after the VT320 1987 computer terminal. It&apos;s optimized for a desktop experience. The drop down display may not properly work on mobile, alongside some of the other more finnicky code, until further optimization has been done on the web-page. Currently, the website&apos;s index file is under 10 KB in size and will likely not go over 1 MB in total size with further modification. The website uses HTML, Javascript, CSS, and was built with code written by me in Visual Studio 2019.
+            </p>
+            <p>
+              The basic text color is set to &apos;forestgreen&apos;, while the highlighted outlines are set to &apos;darkseagreen&apos; when on-hover. The dropdown makes use of nested menus and &apos;nth-child&apos; CSS pseudo-elements to work with visibility.
+            </p>
+            <p>
+              Antony % Portfolio
+            </p>
+          </div>
+          <div className={styles.card}>
+            <p className={styles.header}>
+              CD: ./Antony/Portfolio/
+            </p>
+            <p>
+              Antony % Portfolio
+            </p>
+            <ul>
+              <li>
+                <a href="subpages/About.html"  target="rightcont">About</a>
+              </li>
+              <li>
+                <a href="subpages/Projects.html" target="rightcont">Projects</a>
+              </li>
+              <li>
+                <a href="subpages/Designs.html" target="rightcont">Designwork</a>
+              </li>
+              <li>
+                <a href="subpages/Website.html" target="rightcont">Website</a>
+              </li>
+            </ul>
+            <p>
+              Antony % Portfolio
+            </p>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        <div className={styles.container} style={{"float": "left"}}>
+          <div className={styles.card}>
+            <p className={styles.header} style={{"margin-bottom": "0px"}}>
+              CD: ./Antony/Portfolio/
+            </p>
+            <div id={styles.rightframe} name="rightcont">
+              test
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
