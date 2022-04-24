@@ -1,11 +1,15 @@
 import Card from '@Components/Card/Card';
+import { useRouter } from 'next/router';
 import styles from './Content.module.css';
 
 function Content(props) {
+    const router = useRouter();
+    const pathString = ((router.asPath != '/') ? router.asPath : '/index') + '.js';
+
     return(
         <div className={styles.content}>
             <div className={styles.container}>
-                <Card>
+                <Card header="cat ~/welcome.txt">
                     <p>
                         Antony % Portfolio
                     </p>
@@ -19,7 +23,7 @@ function Content(props) {
                         Antony % Portfolio
                     </p>
                 </Card>
-                <Card>
+                <Card header="ls">
                     <p>
                         Antony % Portfolio
                     </p>
@@ -43,7 +47,7 @@ function Content(props) {
                 </Card>
             </div>
             <div className={styles.container}>
-                <Card>
+                <Card header={`cd pages${pathString}`}>
                     <div id={styles.rightframe} name="rightcont">
                         {props.children}
                     </div>
