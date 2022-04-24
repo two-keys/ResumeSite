@@ -33,7 +33,7 @@ function Content(props) {
                             <Link href="/">About</Link>
                         </li>
                         <li>
-                            <a href="subpages/Projects.html" target="rightcont">Projects</a>
+                            <a href="/projects">Projects</a>
                         </li>
                         <li>
                             <a href="subpages/Designs.html" target="rightcont">Designwork</a>
