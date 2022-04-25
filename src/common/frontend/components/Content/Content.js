@@ -15,10 +15,10 @@ function Content(props) {
                         Antony % Portfolio
                     </p>
                     <p>
-                        This portfolio website uses the VT323 font-family, which is Licensed under the Open Font License, and is styled after the VT320 1987 computer terminal. It&apos;s optimized for a desktop experience. The drop down display may not properly work on mobile, alongside some of the other more finnicky code, until further optimization has been done on the web-page. Currently, the website&apos;s index file is under 10 KB in size and will likely not go over 1 MB in total size with further modification. The website uses HTML, Javascript, CSS, and was built with code written by me in Visual Studio 2019.
+                        This portfolio website uses the VT323 font-family, which is Licensed under the Open Font License, and is styled after the VT320 1987 computer terminal. It&apos;s optimized for a desktop experience. The drop down display may not properly work on mobile, alongside some of the other more finnicky code, until further optimization has been done on the web-page. The website uses HTML, Javascript, and CSS through the ReactJS framework, and was built with code written by me in Visual Studio Code.
                     </p>
                     <p>
-                        The basic text color is set to &apos;forestgreen&apos;, while the highlighted outlines are set to &apos;darkseagreen&apos; when on-hover. The dropdown makes use of nested menus and &apos;nth-child&apos; CSS pseudo-elements to work with visibility.
+                        The basic text color is set to &apos;forestgreen&apos;, while the highlighted outlines are set to &apos;darkseagreen&apos; when on-hover. The website uses functional components and hooks as opposed to Class components, since I believe functional components are cleaner to work with. I have eslint enabled to ensure my code is not ugly. 
                     </p>
                     <p>
                         Antony % Portfolio
