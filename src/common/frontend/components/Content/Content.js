@@ -33,10 +33,10 @@ function Content(props) {
                             <Link href="/">About</Link>
                         </li>
                         <li>
-                            <a href="/projects">Projects</a>
+                            <Link href="/projects">Projects</Link>
                         </li>
                         <li>
-                            <a href="/website">Website</a>
+                            <Link href="/website">Website</Link>
                         </li>
                     </ul>
                     <p>
