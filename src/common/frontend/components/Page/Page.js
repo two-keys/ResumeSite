@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from './Page.module.css'
 import Content from '@Components/Content/Content';
+import Sidebar from '@Components/Sidebar/Sidebar';
 
 function Page(props) {
   return (
@@ -11,9 +12,12 @@ function Page(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Content>
-        {props.children}
-      </Content>
+      <div className={styles.main}>
+        <Sidebar />
+        <Content>
+          {props.children}
+        </Content>
+      </div>
     </div>
   )
 }
