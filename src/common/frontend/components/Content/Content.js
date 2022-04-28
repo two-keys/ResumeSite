@@ -10,7 +10,7 @@ function Content(props) {
     return(
         <Container>
             <Card header={`cd pages${pathString}`}>
-                <div id={styles.content} name="rightcont">
+                <div id={styles.content}>
                     {props.children}
                 </div>
             </Card>
